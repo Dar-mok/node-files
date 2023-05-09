@@ -2,6 +2,7 @@
 const fsP = require("fs/promises");
 const cmnPath = process.argv[2];
 
+//TODO: docstring
 async function cat(path) {
   try {
     const holder = await fsP.readFile(path, "utf8");
